@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<!--
+appendChild() them mot node vao cuoi.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="wra">
+            
+        </div>
+
+        <input type="button" onclick="addString()" value="Add String"/>
+        
+        <script>
+                function addString(){
+                    var node = document.getElementById('wra');
+
+                    // Tạo một thẻ p theo yêu cầu
+                    var p = document.createElement('p');
+                    p.innerHTML = "yeuroi";
+
+                    // Thêm nó vào node
+                    node.appendChild(p);
+                }
+				
+        </script>
+    </body>
+</html>
